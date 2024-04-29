@@ -1,4 +1,4 @@
-const mongodb = require('../db/connect');
+const mongodb = require('../db/connect')
 
 const getUser = async (req, res, next) => {
     const result = await mongodb.getDb().db("users").collection("user").find();
