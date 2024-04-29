@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const route = require("./routes/index");
-const mongodb = require('./db/connect');
+const mongodb = require("./db/connect");
 const port = process.env.port || 3000;
 
 mongodb.initDb((err, mongodb) => {
